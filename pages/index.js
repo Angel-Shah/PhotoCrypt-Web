@@ -11,9 +11,16 @@ export default function Home() {
       </Head>
       <body className="content">
         
-      <div className="frosted-panel">
-      <h1 className="">Secure accounts with images, not passwords.</h1>
+      <h1 className="slogan mx-auto ">Secure accounts with <div style={{fontWeight:"bold",color:"orange",fontFamily:"Arial", display:"inline"
+    }}>IMAGES</div>, not passwords.</h1>
+      <div style={{display:"flexbox", flexDirection:"row"}}>
 
+      <div className="frosted-panel mx-3">
+
+      </div>
+      <div className="frosted-panel mx-3">
+
+      </div>
       </div>
       </body>
       
