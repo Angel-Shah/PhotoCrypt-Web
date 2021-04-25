@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Foot = styled.div`
 background:#160d23;
 color:#e2c7fd;
-height:10vh;
+height:13vh;
 display:flex;
 justify-content: center;
 align-items: center;

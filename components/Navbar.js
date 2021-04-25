@@ -38,7 +38,7 @@ const Navbar = () => {
   const [navbar,setNavbar] = useState(false);
 
   const changeBackground =() =>{
-    if(window.scrollY >= 40){
+    if(window.scrollY >= 10){
         setNavbar(true);
     }else{
       setNavbar(false);
@@ -51,7 +51,7 @@ const Navbar = () => {
   
     return ( 
       // navbar navbar-expand-lg navbar-dark bg-purple sticky
-      <nav className={navbar ? 'navbar navbar-expand-lg navbar-dark bg-purple sticky active' : 'navbar navbar-expand-lg navbar-dark bg-purple sticky'} >
+      <nav className={navbar ? 'navbar navbar-expand-lg navbar-dark bg-transp sticky active' : 'navbar navbar-expand-lg navbar-dark bg-transp sticky'} >
   <div className="container-fluid" >
     <Link href="/">
     <a className="navbar-brand py-3 " href="#" style={{color:"orange",fontSize:"2rem",fontFamily:"Rubik"}}>

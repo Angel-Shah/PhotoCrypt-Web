@@ -11,7 +11,10 @@ export default function Home() {
       </Head>
       <body className="content">
         
-      <h1>what am i doing here</h1>
+      <h1 className="">Secure accounts with images, not passwords.</h1>
+      <div className="frosted-panel">
+
+      </div>
       </body>
       
     </div>
