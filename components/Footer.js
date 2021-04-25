@@ -2,19 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Foot = styled.div`
-background: #000;
-color:#fff;
-height:60px;
+background:#160d23;
+color:#e2c7fd;
+height:10vh;
 display:flex;
 justify-content: center;
 align-items: center;
-bottom: 10px;
+bottom:0;
 `;
 
 const Footer = () => {
     return (
         <Foot>
-            <p>PhotoCrypt 2021 All Rights Reserved</p>
+            <p style={{alignItems:"center",justifyContent:"center",padding:"35px"}}>PhotoCrypt 2021 All Rights Reserved</p>
         </Foot>
     )
 }

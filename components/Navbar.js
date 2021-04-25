@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image'
@@ -32,10 +32,26 @@ const customNavBg ={
 
 
 const Navbar = () => {
+
+  
+
+  const [navbar,setNavbar] = useState(false);
+
+  const changeBackground =() =>{
+    if(window.scrollY >= 40){
+        setNavbar(true);
+    }else{
+      setNavbar(false);
+    }
+  }
+  if (typeof window !== "undefined") {
+    // browser code
+    window.addEventListener('scroll',changeBackground);
+  }
   
     return ( 
-      
-      <nav className="navbar navbar-expand-lg navbar-dark bg-purple" >
+      // navbar navbar-expand-lg navbar-dark bg-purple sticky
+      <nav className={navbar ? 'navbar navbar-expand-lg navbar-dark bg-purple sticky active' : 'navbar navbar-expand-lg navbar-dark bg-purple sticky'} >
   <div className="container-fluid" >
     <Link href="/">
     <a className="navbar-brand py-3 " href="#" style={{color:"orange",fontSize:"2rem",fontFamily:"Rubik"}}>
@@ -49,12 +65,12 @@ const Navbar = () => {
       <ul className="navbar-nav  ms-auto "  >
         <li className="nav-item mx-5 ">
            <Link href="/" >
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link  " aria-current="page" href="#" >Home</a>
            </Link>
         </li>
         <li className="nav-item mx-5">
            <Link href="/about">
-          <a className="nav-link active " href="#">About</a>
+          <a className="nav-link  " href="#">About</a>
            </Link>
         </li>
         {/* <li className="nav-item dropdown">
@@ -70,12 +86,12 @@ const Navbar = () => {
         </li> */}
         <li className="nav-item mx-5">
           <Link href="/contact">
-          <a className="nav-link active " href="#" >Contact</a>
+          <a className="nav-link  " href="#" >Contact</a>
           </Link>
         </li>
         <li className="nav-item mx-5">
-          <a className="nav-link active " href="https://github.com/NeuralWorksAI/photocrypt-extension" target="_blank" rel="noopener noreferrer" 
-          ><i class="fa fa-github"/> GitHub</a>
+          <a className="nav-link  " href="https://github.com/NeuralWorksAI/photocrypt-extension" target="_blank" rel="noopener noreferrer" 
+          ><i className="fa fa-github"/> GitHub</a>
         </li>
       </ul>
       

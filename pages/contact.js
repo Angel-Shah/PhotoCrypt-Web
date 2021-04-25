@@ -9,8 +9,10 @@ export default function Contact() {
         <title>PhotoCrypt | Contact Us</title>
         <link rel="icon" href="/PhotoCrypt-Favicon.png" />
       </Head>
-    
+      
+      <body className="content">
       <h1>This is the 'Contact' page.</h1>
+        </body>
       
     </div>
   )

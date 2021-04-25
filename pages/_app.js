@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
 import '../styles/globals.css'
-import '../styles/underlineAni.css'
+import '../styles/navbarStyle.css'
 
 
 
@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }) {
 {/* Rubik font link */}
 <link rel="preconnect" href="https://fonts.gstatic.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Rubik&display=swap" rel="stylesheet"/>
+
 
 </Head>
   <Layout>

@@ -1,0 +1,75 @@
+*{
+    font-family: Rubik;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+  }
+
+  .navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+
+  .navbar::-webkit-scrollbar{
+      background: palegoldenrod;
+  }
+
+
+.bg-purple{
+    /* background:linear-gradient(0.25turn, #191346, #331964, #3b1b75, #4a2f7e, #1f194b); */
+    background: transparent;
+    
+}
+.bg-purple.active{
+    background:#160d23;
+    box-shadow: 0px 7px 10px rgb(97, 67, 11);
+}
+
+.navbar .navbar-nav .nav-link{
+    color:#e2c7fd;
+    /* font-weight: bold; */
+    /* font-family: Rubik; */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: orange;
+   
+  }
+  @media only screen and (min-width: 960px) {
+    .navbar .navbar-nav .nav-link {
+      padding: 0.5em 0.7em;
+    }
+    .navbar {
+      padding: 0;
+      
+    }
+    .navbar .navbar-brand {
+      padding: 0 0.7em;
+    }
+  }
+  .navbar .navbar-nav .nav-link {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 1px;;
+    left: 0;
+    right: 1;
+    margin: auto;
+    background-color:orange;
+    color: transparent;
+    width: 0%;
+    content: '';
+    height: 3px;
+    
+    transition: all 0.3s;
+  }
+  .navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    background-color: orange;
+  }
+  
