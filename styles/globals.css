@@ -54,7 +54,7 @@ a {
   
 }
 
-h1{
+h1, h2{
   color:whitesmoke;
 }
 
@@ -73,10 +73,10 @@ h1{
 }
 
 .slogan{
-  text-align: center;
+  margin-top: 10vh;
   width:40vw;
-  /* color:whitesmoke; */
-  color:#e2c7fd;
+  color:whitesmoke;
+  /* color:#e2c7fd; */
  
 
 
