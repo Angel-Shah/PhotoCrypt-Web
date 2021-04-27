@@ -8,7 +8,7 @@ height:13vh;
 display:flex;
 justify-content: center;
 align-items: center;
-bottom:0;
+
 `;
 
 const Footer = () => {

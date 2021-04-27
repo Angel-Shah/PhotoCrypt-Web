@@ -35,7 +35,7 @@ body {
     background-image: url('/photocrypt-background.png');
    
     background-size:cover;
-    height:100vh;
+    min-height:100vh;
    
    
     
@@ -59,13 +59,14 @@ h1, h2{
 }
 
 .content{
-  padding-top: 65px;
+  padding-top: 9vh;
+  overflow-x: hidden;
 }
 .frosted-panel {
 
   width: 30rem;
   height: 20rem;
-  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .2); 
+  box-shadow: 0 0 2rem 0 rgba(58, 45, 45, 0.2); 
   border-radius: 5px;
   background-color: rgba(87, 84, 84, 0.219);
   
@@ -74,10 +75,22 @@ h1, h2{
 
 .slogan{
   margin-top: 10vh;
-  width:40vw;
+  width:39vw;
   color:whitesmoke;
+  padding:0px;
   /* color:#e2c7fd; */
  
 
 
+}
+
+.frosted-panel-big {
+  margin-top: 5vh;
+  width: 85vw;
+  height: 90vh;
+  box-shadow: 0 0 1.5rem 0 black; 
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(255, 255, 255, 0.219);
+  
+  backdrop-filter: blur(5px);
 }

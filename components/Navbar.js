@@ -24,10 +24,7 @@ import Image from 'next/image'
 // font-weight: 900;
 // margin-left: 0px;
 // `;
-const customNavBg ={
-   backgroundColor:"purple",
-   
-};
+
 
 
 
@@ -54,7 +51,7 @@ const Navbar = () => {
       <nav className={navbar ? 'navbar navbar-expand-lg navbar-dark bg-transp sticky active' : 'navbar navbar-expand-lg navbar-dark bg-transp sticky'} >
   <div className="container-fluid" >
     <Link href="/">
-    <a className="navbar-brand py-3 " href="#" style={{color:"orange",fontSize:"2rem",fontFamily:"Rubik"}}>
+    <a className="navbar-brand py-3 " href="#" style={{color:"orange",fontSize:"2.3rem",fontFamily:"Rubik"}}>
     <img src="/PhotoCrypt-Favicon.png" alt="" height = "60" className="d-inline-block align-text-center px-2 " />
       PhotoCrypt</a>
     </Link>
