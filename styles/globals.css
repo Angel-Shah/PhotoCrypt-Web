@@ -60,7 +60,8 @@ h1, h2{
 
 .content{
   padding-top: 9vh;
-  overflow-x: hidden;
+  /* flex-wrap:wrap-reverse; */
+  overflow-x:auto;
 }
 .frosted-panel {
 

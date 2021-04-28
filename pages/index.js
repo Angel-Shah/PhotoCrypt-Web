@@ -37,7 +37,7 @@ export default function Home() {
 
         </div>
 
-        <img id="laptop-img" className="" style={{height:"59vh",marginTop:"10vh",display:"inline-block"}} src="/tester2.png" alt=""/>
+        <img id="laptop-img" className="" style={{height:"59vh",width:"auto",marginTop:"10vh",display:"inline-block"}} src="/laptopwithphotocrypt.png" alt=""/>
         
         </div> 
         {/* <a href="https://chrome.google.com/webstore/detail/photocrypt/kmoamkcocigmimdndlpakeboolcbiddg?hl=en" target="_blank" rel="noopener noreferrer" >
