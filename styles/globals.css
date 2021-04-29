@@ -1,4 +1,10 @@
 
+.All{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
 Works on Firefox
 * {
   scrollbar-width: thin;
@@ -49,6 +55,7 @@ a {
 
 * {
   box-sizing: border-box;
+  transition: ease-in 0.7s;
   /* background:linear-gradient(0.25turn, #1f194b, #5d3c9b, #4f1bb1); */
   
   
