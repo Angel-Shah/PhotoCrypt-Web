@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import '../styles/globals.css'
 import '../styles/navbarStyle.css'
-import DotLoader from "react-spinners/DotLoader";
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 
 function MyApp({ Component, pageProps }) {
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 900);
+    }, 950);
   }, [])
 
   return (
@@ -23,15 +23,15 @@ function MyApp({ Component, pageProps }) {
 {
   loading ?
 
-  <div style={{paddingTop:"50vh"}}>
-  <DotLoader 
+  
+  <PropagateLoader 
   color={"orange"} 
   loading={loading} 
-  size={55}
+  size={17}
   
   
    />
-   </div>
+   
 
   :
 

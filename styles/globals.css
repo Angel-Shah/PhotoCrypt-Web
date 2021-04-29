@@ -5,6 +5,9 @@
   align-items: center;
  
 }
+DotLoader{
+  transition:ease-in-out 0.2s;
+}
 Works on Firefox
 * {
   scrollbar-width: thin;
